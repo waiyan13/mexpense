@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">Mexpense</string>
+    <string name="title_home">Home</string>
+    <string name="title_trips">Trips</string>
+    <string name="title_cloud">Cloud</string>
+    <string name="search">Search</string>
+    <string name="trips_add_new_trip">Add Trip</string>
+    <string name="trips_tooltip_new_trip">Add a new trip</string>
+    <string name="new_trip_hint_trip_name">Name of the trip</string>
+    <string name="new_trip_hint_start_date">Start date</string>
+    <string name="new_trip_hint_destination">Destination</string>
+    <string name="new_trip_btn_add">Add</string>
+</resources>

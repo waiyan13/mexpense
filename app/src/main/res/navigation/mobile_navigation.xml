@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@id/navigation_home">
+
+    <fragment
+        android:id="@+id/navigation_home"
+        android:name="com.zwylwin.mexpense.ui.home.HomeFragment"
+        android:label="@string/title_home"
+        tools:layout="@layout/fragment_home" />
+
+    <fragment
+        android:id="@+id/navigation_trips"
+        android:name="com.zwylwin.mexpense.ui.trips.TripsFragment"
+        android:label="@string/title_trips"
+        tools:layout="@layout/fragment_trips" >
+        <action
+            android:id="@+id/action_navigation_trips_to_newTripFragment"
+            app:destination="@id/newTripFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/navigation_cloud"
+        android:name="com.zwylwin.mexpense.ui.cloud.CloudFragment"
+        android:label="@string/title_cloud"
+        tools:layout="@layout/fragment_cloud" />
+
+    <fragment
+        android:id="@+id/newTripFragment"
+        android:name="com.zwylwin.mexpense.ui.newTrip.NewTripFragment"
+        android:label="Add New Trip"
+        tools:layout="@layout/fragment_new_trip" />
+
+</navigation>
